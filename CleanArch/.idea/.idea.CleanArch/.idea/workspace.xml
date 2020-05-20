@@ -42,15 +42,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb0367f1-048a-4c7f-93f6-5e6a48927e59" name="Default Changelist" comment="Add Course Domain Model">
-      <change afterPath="$PROJECT_DIR$/CleanArch.Mvc/Controllers/CourseController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CleanArch.Mvc/Views/Course/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CleanArch.Mvc/wwwroot/images/chemistry.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CleanArch.Mvc/wwwroot/images/mathematics.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CleanArch.Mvc/wwwroot/images/physics.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArch/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArch.Mvc/CleanArch.Mvc.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Mvc/CleanArch.Mvc.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArch.Mvc/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Mvc/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArch.Mvc/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Mvc/wwwroot/css/site.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CleanArch.Infra.Bus/CleanArch.Infra.Bus.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CleanArch.Infra.Bus/InMemoryBus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArch.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +52,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GithubDefaultAccount">
@@ -84,6 +83,7 @@
     <setting file="file://$PROJECT_DIR$/CleanArch.Domain/Models/Course.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Application/Interfaces/ICourseService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArch.Infra.Bus/InMemoryBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Views/Course/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -112,6 +112,8 @@
         <option value="$PROJECT_DIR$/CleanArch.Mvc/wwwroot/css/site.css" />
         <option value="$PROJECT_DIR$/CleanArch.Mvc/Views/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/CleanArch.Mvc/Controllers/CourseController.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Infra.Bus/Class1.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Infra.Bus/InMemoryBus.cs" />
       </list>
     </option>
   </component>
@@ -176,7 +178,7 @@
       <workItem from="1589963837756" duration="8361000" />
       <workItem from="1589978816841" duration="99000" />
       <workItem from="1589978938110" duration="898000" />
-      <workItem from="1589980184679" duration="9723000" />
+      <workItem from="1589980184679" duration="10411000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit of Solution File">
       <created>1589964316854</created>
@@ -276,7 +278,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589995221258</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Commit changes for Presentation Course Controller, Views, Styling, Authorization">
+      <created>1589998558208</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1589998558208</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Initial Commit for CQRS using MediatR">
+      <created>1590000660754</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1590000660754</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,36 +325,38 @@
     <MESSAGE value="Commit Implementation of Service and Repository GetCourses Methods" />
     <MESSAGE value="Initial Commit of Dependency Injection Project of IoC" />
     <MESSAGE value="Configure Presentation Layer for Dependency Container" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configure Presentation Layer for Dependency Container" />
+    <MESSAGE value="Commit changes for Presentation Course Controller, Views, Styling, Authorization" />
+    <MESSAGE value="Initial Commit for CQRS using MediatR" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit for CQRS using MediatR" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1101" y="432" key="Github.Dialog.Accounts.Choose" timestamp="1589964351532">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
     <state x="1101" y="432" key="Github.Dialog.Accounts.Choose/0.23.1680.980@0.23.1680.980" timestamp="1589964351532" />
-    <state width="835" height="257" key="GridCell.Tab.0.bottom" timestamp="1589997230929">
+    <state width="835" height="257" key="GridCell.Tab.0.bottom" timestamp="1589998440073">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state width="835" height="257" key="GridCell.Tab.0.bottom/0.23.1680.980@0.23.1680.980" timestamp="1589997230929" />
-    <state width="835" height="257" key="GridCell.Tab.0.center" timestamp="1589997230928">
+    <state width="835" height="257" key="GridCell.Tab.0.bottom/0.23.1680.980@0.23.1680.980" timestamp="1589998440073" />
+    <state width="835" height="257" key="GridCell.Tab.0.center" timestamp="1589998440072">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state width="835" height="257" key="GridCell.Tab.0.center/0.23.1680.980@0.23.1680.980" timestamp="1589997230928" />
-    <state width="835" height="257" key="GridCell.Tab.0.left" timestamp="1589997230927">
+    <state width="835" height="257" key="GridCell.Tab.0.center/0.23.1680.980@0.23.1680.980" timestamp="1589998440072" />
+    <state width="835" height="257" key="GridCell.Tab.0.left" timestamp="1589998440071">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state width="835" height="257" key="GridCell.Tab.0.left/0.23.1680.980@0.23.1680.980" timestamp="1589997230927" />
-    <state width="835" height="257" key="GridCell.Tab.0.right" timestamp="1589997230928">
+    <state width="835" height="257" key="GridCell.Tab.0.left/0.23.1680.980@0.23.1680.980" timestamp="1589998440071" />
+    <state width="835" height="257" key="GridCell.Tab.0.right" timestamp="1589998440072">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state width="835" height="257" key="GridCell.Tab.0.right/0.23.1680.980@0.23.1680.980" timestamp="1589997230928" />
-    <state x="880" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1589991286803">
+    <state width="835" height="257" key="GridCell.Tab.0.right/0.23.1680.980@0.23.1680.980" timestamp="1589998440072" />
+    <state x="880" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1590000704820">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state x="880" y="252" key="Rider.ProjectTemplateDialog.Size/0.23.1680.980@0.23.1680.980" timestamp="1589991286803" />
-    <state x="856" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589995222785">
+    <state x="880" y="252" key="Rider.ProjectTemplateDialog.Size/0.23.1680.980@0.23.1680.980" timestamp="1590000704820" />
+    <state x="856" y="253" key="Vcs.Push.Dialog.v2" timestamp="1590000667512">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state x="856" y="253" key="Vcs.Push.Dialog.v2/0.23.1680.980@0.23.1680.980" timestamp="1589995222785" />
+    <state x="856" y="253" key="Vcs.Push.Dialog.v2/0.23.1680.980@0.23.1680.980" timestamp="1590000667512" />
   </component>
 </project>
