@@ -41,7 +41,8 @@
     <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb0367f1-048a-4c7f-93f6-5e6a48927e59" name="Default Changelist" comment="Initial Commit for CleanArch.Mvc Project (Presentation)">
+    <list default="true" id="bb0367f1-048a-4c7f-93f6-5e6a48927e59" name="Default Changelist" comment="Initial Commit of Domain Layer Project CleanArch.Domain">
+      <change afterPath="$PROJECT_DIR$/CleanArch.Domain/CleanArch.Domain.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArch/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CleanArch.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.sln" afterDir="false" />
     </list>
@@ -137,7 +138,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589963826905</updated>
-      <workItem from="1589963837756" duration="6539000" />
+      <workItem from="1589963837756" duration="6856000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit of Solution File">
       <created>1589964316854</created>
@@ -160,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589971115722</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial Commit of Domain Layer Project CleanArch.Domain">
+      <created>1589973410017</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589973410017</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,20 +192,37 @@
     <MESSAGE value="Initial Commit of Solution File" />
     <MESSAGE value="Adding Folder Structure for Hosting Projects" />
     <MESSAGE value="Initial Commit for CleanArch.Mvc Project (Presentation)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit for CleanArch.Mvc Project (Presentation)" />
+    <MESSAGE value="Initial Commit of Domain Layer Project CleanArch.Domain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit of Domain Layer Project CleanArch.Domain" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1101" y="432" key="Github.Dialog.Accounts.Choose" timestamp="1589964351532">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
     <state x="1101" y="432" key="Github.Dialog.Accounts.Choose/0.23.1680.980@0.23.1680.980" timestamp="1589964351532" />
+    <state width="719" height="265" key="GridCell.Tab.0.bottom" timestamp="1589973102010">
+      <screen x="0" y="23" width="1680" height="980" />
+    </state>
+    <state width="719" height="265" key="GridCell.Tab.0.bottom/0.23.1680.980@0.23.1680.980" timestamp="1589973102010" />
+    <state width="719" height="265" key="GridCell.Tab.0.center" timestamp="1589973102009">
+      <screen x="0" y="23" width="1680" height="980" />
+    </state>
+    <state width="719" height="265" key="GridCell.Tab.0.center/0.23.1680.980@0.23.1680.980" timestamp="1589973102009" />
+    <state width="719" height="265" key="GridCell.Tab.0.left" timestamp="1589973102008">
+      <screen x="0" y="23" width="1680" height="980" />
+    </state>
+    <state width="719" height="265" key="GridCell.Tab.0.left/0.23.1680.980@0.23.1680.980" timestamp="1589973102008" />
+    <state width="719" height="265" key="GridCell.Tab.0.right" timestamp="1589973102009">
+      <screen x="0" y="23" width="1680" height="980" />
+    </state>
+    <state width="719" height="265" key="GridCell.Tab.0.right/0.23.1680.980@0.23.1680.980" timestamp="1589973102009" />
     <state x="880" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1589973080631">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
     <state x="880" y="252" key="Rider.ProjectTemplateDialog.Size/0.23.1680.980@0.23.1680.980" timestamp="1589973080631" />
-    <state x="856" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589971119500">
+    <state x="856" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589973412683">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state x="856" y="253" key="Vcs.Push.Dialog.v2/0.23.1680.980@0.23.1680.980" timestamp="1589971119500" />
+    <state x="856" y="253" key="Vcs.Push.Dialog.v2/0.23.1680.980@0.23.1680.980" timestamp="1589973412683" />
   </component>
 </project>
