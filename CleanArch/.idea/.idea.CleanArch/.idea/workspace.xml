@@ -41,7 +41,14 @@
     <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb0367f1-048a-4c7f-93f6-5e6a48927e59" name="Default Changelist" comment="Initial Commit of Domain Layer Project CleanArch.Domain" />
+    <list default="true" id="bb0367f1-048a-4c7f-93f6-5e6a48927e59" name="Default Changelist" comment="Add Course Domain Model">
+      <change afterPath="$PROJECT_DIR$/CleanArch.Infra.Data/Context/UniversityDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArch/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArch.Mvc/CleanArch.Mvc.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Mvc/CleanArch.Mvc.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArch.Mvc/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Mvc/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArch.Mvc/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Mvc/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArch.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,14 +62,19 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Views/Home/Privacy.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Views/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Data/Migrations/20200520100150_InitialMigration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Data/Migrations/00000000000000_CreateIdentitySchema.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Data/Migrations/ApplicationDbContextModelSnapshot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArch.Domain/Models/Course.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArch.Infra.Data/Context/UniversityDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Data/Migrations/20200520100150_InitialMigration.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Models/ErrorViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/appsettings.json" root0="FORCE_HIGHLIGHTING" />
@@ -70,9 +82,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CleanArch.Mvc/appsettings.json" />
-        <option value="$PROJECT_DIR$/CleanArch.Mvc/Startup.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Domain/Class1.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Domain/Models/Course.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Infra.Data/Class1.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Infra.Data/Context/UniversityDbContext.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Mvc/Startup.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Mvc/appsettings.json" />
       </list>
     </option>
   </component>
@@ -134,7 +149,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589963826905</updated>
-      <workItem from="1589963837756" duration="7344000" />
+      <workItem from="1589963837756" duration="8361000" />
+      <workItem from="1589978816841" duration="99000" />
+      <workItem from="1589978938110" duration="898000" />
+      <workItem from="1589980184679" duration="2444000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit of Solution File">
       <created>1589964316854</created>
@@ -171,13 +189,20 @@
       <option name="project" value="LOCAL" />
       <updated>1589977692257</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add Course Domain Model">
+      <created>1589977914342</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589977914342</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -189,6 +214,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -196,36 +222,37 @@
     <MESSAGE value="Adding Folder Structure for Hosting Projects" />
     <MESSAGE value="Initial Commit for CleanArch.Mvc Project (Presentation)" />
     <MESSAGE value="Initial Commit of Domain Layer Project CleanArch.Domain" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit of Domain Layer Project CleanArch.Domain" />
+    <MESSAGE value="Add Course Domain Model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Course Domain Model" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1101" y="432" key="Github.Dialog.Accounts.Choose" timestamp="1589964351532">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
     <state x="1101" y="432" key="Github.Dialog.Accounts.Choose/0.23.1680.980@0.23.1680.980" timestamp="1589964351532" />
-    <state width="719" height="265" key="GridCell.Tab.0.bottom" timestamp="1589973102010">
+    <state width="719" height="265" key="GridCell.Tab.0.bottom" timestamp="1589978773646">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state width="719" height="265" key="GridCell.Tab.0.bottom/0.23.1680.980@0.23.1680.980" timestamp="1589973102010" />
-    <state width="719" height="265" key="GridCell.Tab.0.center" timestamp="1589973102009">
+    <state width="719" height="265" key="GridCell.Tab.0.bottom/0.23.1680.980@0.23.1680.980" timestamp="1589978773646" />
+    <state width="719" height="265" key="GridCell.Tab.0.center" timestamp="1589978773645">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state width="719" height="265" key="GridCell.Tab.0.center/0.23.1680.980@0.23.1680.980" timestamp="1589973102009" />
-    <state width="719" height="265" key="GridCell.Tab.0.left" timestamp="1589973102008">
+    <state width="719" height="265" key="GridCell.Tab.0.center/0.23.1680.980@0.23.1680.980" timestamp="1589978773645" />
+    <state width="719" height="265" key="GridCell.Tab.0.left" timestamp="1589978773644">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state width="719" height="265" key="GridCell.Tab.0.left/0.23.1680.980@0.23.1680.980" timestamp="1589973102008" />
-    <state width="719" height="265" key="GridCell.Tab.0.right" timestamp="1589973102009">
+    <state width="719" height="265" key="GridCell.Tab.0.left/0.23.1680.980@0.23.1680.980" timestamp="1589978773644" />
+    <state width="719" height="265" key="GridCell.Tab.0.right" timestamp="1589978773645">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state width="719" height="265" key="GridCell.Tab.0.right/0.23.1680.980@0.23.1680.980" timestamp="1589973102009" />
-    <state x="880" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1589973080631">
+    <state width="719" height="265" key="GridCell.Tab.0.right/0.23.1680.980@0.23.1680.980" timestamp="1589978773645" />
+    <state x="880" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1589978274619">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state x="880" y="252" key="Rider.ProjectTemplateDialog.Size/0.23.1680.980@0.23.1680.980" timestamp="1589973080631" />
-    <state x="856" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589973412683">
+    <state x="880" y="252" key="Rider.ProjectTemplateDialog.Size/0.23.1680.980@0.23.1680.980" timestamp="1589978274619" />
+    <state x="856" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589977915843">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state x="856" y="253" key="Vcs.Push.Dialog.v2/0.23.1680.980@0.23.1680.980" timestamp="1589973412683" />
+    <state x="856" y="253" key="Vcs.Push.Dialog.v2/0.23.1680.980@0.23.1680.980" timestamp="1589977915843" />
   </component>
 </project>
