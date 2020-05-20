@@ -42,11 +42,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb0367f1-048a-4c7f-93f6-5e6a48927e59" name="Default Changelist" comment="Add Course Domain Model">
-      <change afterPath="$PROJECT_DIR$/CleanArch.Application/Interfaces/ICourseService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CleanArch.Application/ViewModels/CourseViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CleanArch.Domain/Interfaces/ICourseRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArch/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArch.Application/CleanArch.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Application/CleanArch.Application.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +74,9 @@
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Data/Migrations/20200520100150_InitialMigration.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Models/ErrorViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Domain/Interfaces/ICourseRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArch.Application/Services/CourseService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArch.Infra.Data/Repository/CourseRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -87,13 +85,15 @@
         <option value="$PROJECT_DIR$/CleanArch.Domain/Class1.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Domain/Models/Course.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Infra.Data/Class1.cs" />
-        <option value="$PROJECT_DIR$/CleanArch.Infra.Data/Context/UniversityDbContext.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Mvc/Startup.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Mvc/appsettings.json" />
         <option value="$PROJECT_DIR$/CleanArch.Application/Class1.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Application/ViewModels/CourseViewModel.cs" />
-        <option value="$PROJECT_DIR$/CleanArch.Application/Interfaces/ICourseService.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Domain/Interfaces/ICourseRepository.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Infra.Data/Context/UniversityDbContext.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Infra.Data/Repository/CourseRepository.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Application/Interfaces/ICourseService.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Application/Services/CourseService.cs" />
       </list>
     </option>
   </component>
@@ -158,7 +158,7 @@
       <workItem from="1589963837756" duration="8361000" />
       <workItem from="1589978816841" duration="99000" />
       <workItem from="1589978938110" duration="898000" />
-      <workItem from="1589980184679" duration="3306000" />
+      <workItem from="1589980184679" duration="5025000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit of Solution File">
       <created>1589964316854</created>
@@ -216,7 +216,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589986074817</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Commit Service and Repository Interfaces,CourseViewModels">
+      <created>1589986831133</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589986831133</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Commit Implementation of Service and Repository GetCourses Methods">
+      <created>1589990599904</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1589990599904</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +259,9 @@
     <MESSAGE value="Add Course Domain Model" />
     <MESSAGE value="Initial Commit of Infrastructure.Data Project, Update MVC for new UniversityDbContext" />
     <MESSAGE value="Initial Commit of Application Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit of Application Project" />
+    <MESSAGE value="Commit Service and Repository Interfaces,CourseViewModels" />
+    <MESSAGE value="Commit Implementation of Service and Repository GetCourses Methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Implementation of Service and Repository GetCourses Methods" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1101" y="432" key="Github.Dialog.Accounts.Choose" timestamp="1589964351532">
@@ -272,9 +288,9 @@
       <screen x="0" y="23" width="1680" height="980" />
     </state>
     <state x="880" y="252" key="Rider.ProjectTemplateDialog.Size/0.23.1680.980@0.23.1680.980" timestamp="1589985979048" />
-    <state x="856" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589986076569">
+    <state x="856" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589990601756">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state x="856" y="253" key="Vcs.Push.Dialog.v2/0.23.1680.980@0.23.1680.980" timestamp="1589986076569" />
+    <state x="856" y="253" key="Vcs.Push.Dialog.v2/0.23.1680.980@0.23.1680.980" timestamp="1589990601756" />
   </component>
 </project>
