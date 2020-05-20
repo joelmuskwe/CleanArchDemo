@@ -41,11 +41,7 @@
     <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb0367f1-048a-4c7f-93f6-5e6a48927e59" name="Default Changelist" comment="Initial Commit of Domain Layer Project CleanArch.Domain">
-      <change afterPath="$PROJECT_DIR$/CleanArch.Domain/CleanArch.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArch/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArch.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.sln" afterDir="false" />
-    </list>
+    <list default="true" id="bb0367f1-048a-4c7f-93f6-5e6a48927e59" name="Default Changelist" comment="Initial Commit of Domain Layer Project CleanArch.Domain" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +134,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589963826905</updated>
-      <workItem from="1589963837756" duration="6856000" />
+      <workItem from="1589963837756" duration="7344000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit of Solution File">
       <created>1589964316854</created>
@@ -168,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589973410017</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Initial Commit of Domain Layer Project CleanArch.Domain">
+      <created>1589977692256</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589977692257</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
