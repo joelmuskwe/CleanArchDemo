@@ -9,10 +9,24 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArch.Infra.Data", "CleanArch.Infra.Data", "{E740EBA3-C325-483D-9A1E-BC0A27A66E42}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArch.UI.Mvc", "CleanArch.UI.Mvc", "{540BC86F-6B80-44FE-A731-7B8AD3295CC3}"
+ProjectSection(SolutionItems) = preProject
+	CleanArch.Mvc\university-identity.db = CleanArch.Mvc\university-identity.db
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Mvc", "CleanArch.Mvc\CleanArch.Mvc.csproj", "{1F75B9B7-9077-4A05-A17D-49C3F25F09BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F75B9B7-9077-4A05-A17D-49C3F25F09BD} = {540BC86F-6B80-44FE-A731-7B8AD3295CC3}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F75B9B7-9077-4A05-A17D-49C3F25F09BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F75B9B7-9077-4A05-A17D-49C3F25F09BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F75B9B7-9077-4A05-A17D-49C3F25F09BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F75B9B7-9077-4A05-A17D-49C3F25F09BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
