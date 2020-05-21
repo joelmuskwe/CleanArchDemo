@@ -42,14 +42,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb0367f1-048a-4c7f-93f6-5e6a48927e59" name="Default Changelist" comment="Add Course Domain Model">
-      <change afterPath="$PROJECT_DIR$/CleanArch.Domain.Core/Bus/IMediatorHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CleanArch.Domain.Core/Commands/Command.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CleanArch.Domain.Core/Events/Message.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CleanArch.Domain/CommandHandlers/CourseCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CleanArch.Domain/Commands/CourseCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CleanArch.Domain/Commands/CreateCourseCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArch/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArch.Infra.Bus/CleanArch.Infra.Bus.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Infra.Bus/CleanArch.Infra.Bus.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArch.Infra.Bus/InMemoryBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Infra.Bus/InMemoryBus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArch.Domain/CleanArch.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Domain/CleanArch.Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArch.Domain/Interfaces/ICourseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Domain/Interfaces/ICourseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArch.Infra.Data/Repository/CourseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Infra.Data/Repository/CourseRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CleanArch.Infra.IoC/CleanArch.Infra.IoC.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Infra.IoC/CleanArch.Infra.IoC.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArch.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArch.Infra.IoC/DependencyContainter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Infra.IoC/DependencyContainter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArch.Mvc/CleanArch.Mvc.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArch.Mvc/CleanArch.Mvc.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +70,7 @@
     <option name="defaultAccountId" value="80b2389f-6533-4e17-93c9-93007e2a60f3" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CleanArch.Domain/CommandHandlers/CourseCommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Controllers/CourseController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Data/Migrations/20200520100150_InitialMigration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Infra.Data/Context/UniversityDbContext.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,6 +79,8 @@
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Models/ErrorViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Domain/Interfaces/ICourseRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Application/Services/CourseService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArch.Domain/Commands/CourseCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArch.Domain/Commands/CreateCourseCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Infra.Data/Repository/CourseRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Views/Home/Privacy.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArch.Mvc/Views/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -107,13 +112,10 @@
         <option value="$PROJECT_DIR$/CleanArch.Mvc/appsettings.json" />
         <option value="$PROJECT_DIR$/CleanArch.Application/Class1.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Application/ViewModels/CourseViewModel.cs" />
-        <option value="$PROJECT_DIR$/CleanArch.Domain/Interfaces/ICourseRepository.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Infra.Data/Context/UniversityDbContext.cs" />
-        <option value="$PROJECT_DIR$/CleanArch.Infra.Data/Repository/CourseRepository.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Application/Interfaces/ICourseService.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Application/Services/CourseService.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Infra.IoC/Class1.cs" />
-        <option value="$PROJECT_DIR$/CleanArch.Infra.IoC/DependencyContainter.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Mvc/Startup.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ccf3bf51-e2ee-4399-897d-6ece75b96144/console.sql" />
         <option value="$PROJECT_DIR$/CleanArch.Mvc/Views/Course/Index.cshtml" />
@@ -121,11 +123,17 @@
         <option value="$PROJECT_DIR$/CleanArch.Mvc/Views/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/CleanArch.Mvc/Controllers/CourseController.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Infra.Bus/Class1.cs" />
-        <option value="$PROJECT_DIR$/CleanArch.Infra.Bus/InMemoryBus.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Domain.Core/Class1.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Domain.Core/Events/Message.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Domain.Core/Commands/Command.cs" />
         <option value="$PROJECT_DIR$/CleanArch.Domain.Core/Bus/IMediatorHandler.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Infra.Bus/InMemoryBus.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Domain/Commands/CourseCommand.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Domain/Commands/CreateCourseCommand.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Domain/CommandHandlers/CourseCommandHandler.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Domain/Interfaces/ICourseRepository.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Infra.Data/Repository/CourseRepository.cs" />
+        <option value="$PROJECT_DIR$/CleanArch.Infra.IoC/DependencyContainter.cs" />
       </list>
     </option>
   </component>
@@ -190,7 +198,7 @@
       <workItem from="1589963837756" duration="8361000" />
       <workItem from="1589978816841" duration="99000" />
       <workItem from="1589978938110" duration="898000" />
-      <workItem from="1589980184679" duration="11425000" />
+      <workItem from="1589980184679" duration="14910000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit of Solution File">
       <created>1589964316854</created>
@@ -311,7 +319,28 @@
       <option name="project" value="LOCAL" />
       <updated>1590000885078</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Adding Domain.Core and Implementation of InMemoryBus">
+      <created>1590001987756</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1590001987756</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Adding Domain.Core and Implementation of InMemoryBus">
+      <created>1590002021793</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1590002021793</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Adding Domain.Core and Implementation of InMemoryBus">
+      <created>1590002129152</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1590002129152</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +376,8 @@
     <MESSAGE value="Commit changes for Presentation Course Controller, Views, Styling, Authorization" />
     <MESSAGE value="Initial Commit for CQRS using MediatR" />
     <MESSAGE value="Adding CleanArch.Infra.Bus Project, Added MediatR Package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding CleanArch.Infra.Bus Project, Added MediatR Package" />
+    <MESSAGE value="Adding Domain.Core and Implementation of InMemoryBus" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Domain.Core and Implementation of InMemoryBus" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1101" y="432" key="Github.Dialog.Accounts.Choose" timestamp="1589964351532">
@@ -374,9 +404,9 @@
       <screen x="0" y="23" width="1680" height="980" />
     </state>
     <state x="880" y="252" key="Rider.ProjectTemplateDialog.Size/0.23.1680.980@0.23.1680.980" timestamp="1590001338301" />
-    <state x="856" y="253" key="Vcs.Push.Dialog.v2" timestamp="1590000886368">
+    <state x="856" y="253" key="Vcs.Push.Dialog.v2" timestamp="1590002131057">
       <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state x="856" y="253" key="Vcs.Push.Dialog.v2/0.23.1680.980@0.23.1680.980" timestamp="1590000886368" />
+    <state x="856" y="253" key="Vcs.Push.Dialog.v2/0.23.1680.980@0.23.1680.980" timestamp="1590002131057" />
   </component>
 </project>
